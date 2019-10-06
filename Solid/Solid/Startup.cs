@@ -32,10 +32,17 @@ namespace Solid
                                 nativeConfigureServices(c, x);
                                 ConfigureServices(c, x);
                             })
-                            .ConfigureLogging(l => l.AddConsole(o =>
+                            .ConfigureLogging(l =>
                             {
-                                o.DisableColors = true;
-                            }))
+                                l.AddConsole(o => {
+                                    o.DisableColors = true; });
+
+                                l.AddAppCenter(options =>
+                                {
+                                    options.AppCenterAndroidSecret = "ae4014f8-d674-49dd-88af-4d7fb4692403";
+                                    options.AppCenterLogLevel = Microsoft.AppCenter.LogLevel.Info;
+                                });
+                            })
                             .Build();
 
             App.ServiceProvider = host.Services;

@@ -1,4 +1,5 @@
-﻿using Solid.Models;
+﻿using Microsoft.Extensions.Logging;
+using Solid.Models;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -28,7 +29,8 @@ namespace Solid.SolidPrinciples
             if (!(args.SelectedItem is Principle principle))
                 return;
 
-            await Navigation.PushAsync(new PrincipleDetailView(new PrincipleDetailViewModel(principle)));
+            var logger = App.ServiceProvider.GetService<ILoggerFactory>().CreateLogger<PrincipleDetailViewModel>();
+            await Navigation.PushAsync(new PrincipleDetailView(new PrincipleDetailViewModel(principle, logger)));
             ItemsListView.SelectedItem = null;
         }
     }

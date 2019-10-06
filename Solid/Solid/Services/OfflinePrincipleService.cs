@@ -35,7 +35,7 @@ namespace Solid.Services
                 {
                     Id = 2,
                     Name = "Open/Closed Principle",
-                    ShortDescription = "You should be able to extend a class’s behavior, without modifying it",
+                    ShortDescription = "Possible to extend a class’s behavior, without modifying it",
                     Description = "Some Description",
                     Examples = new List<string>
                     {

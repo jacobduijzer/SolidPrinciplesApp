@@ -2,6 +2,7 @@
 using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Windows.Input;
+using Microsoft.AppCenter.Analytics;
 using MvvmHelpers;
 using MvvmHelpers.Commands;
 using Solid.Models;
@@ -13,7 +14,8 @@ namespace Solid.SolidPrinciples
     {
         public PrinciplesViewModel(IPrincipleService principleService)
         {
-            Title = "Principle";
+            Analytics.TrackEvent($"{nameof(PrinciplesViewModel)}");
+            Title = "SOLID Principles";
             _principleService = principleService;
 
             LoadItemsCommand = new Command(ExecuteLoadItemsCommand);

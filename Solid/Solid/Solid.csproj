@@ -18,6 +18,7 @@
     <PackageReference Include="Microsoft.AppCenter.Analytics" Version="2.4.0-preview" />
     <PackageReference Include="Microsoft.AppCenter.Crashes" Version="2.4.0-preview" />
     <PackageReference Include="Microsoft.AppCenter" Version="2.4.0-preview" />
+    <PackageReference Include="West.Extensions.Logging.AppCenter" Version="2.2.1" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
