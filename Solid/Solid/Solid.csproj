@@ -6,12 +6,31 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="4.2.0.709249" />  
-    <PackageReference Include="Xamarin.Essentials" Version="1.2.0" />
+    <PackageReference Include="Xamarin.Forms" Version="4.2.0.848062" />  
+    <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
     <PackageReference Include="Refractored.MvvmHelpers" Version="1.5.1-beta" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="3.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="3.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="3.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="3.0.0" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
     <Folder Include="Services\" />
+    <Folder Include="Helpers\" />
+    <Folder Include="SolidPrinciples\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="appsettings.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="ViewModels\AboutViewModel.cs" />
   </ItemGroup>
 </Project>
