@@ -161,9 +161,6 @@
     <PackageReference Include="Microsoft.AppCenter">
       <Version>2.4.0-preview</Version>
     </PackageReference>
-    <PackageReference Include="West.Extensions.Logging.AppCenter">
-      <Version>2.2.1</Version>
-    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
