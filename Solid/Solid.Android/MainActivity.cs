@@ -9,6 +9,9 @@ using Android.OS;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Solid.Helpers;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Crashes;
 
 namespace Solid.Droid
 {
@@ -25,6 +28,9 @@ namespace Solid.Droid
             global::Xamarin.Forms.Forms.SetFlags("CollectionView_Experimental");
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
+
+            AppCenter.Start("ae4014f8-d674-49dd-88af-4d7fb4692403", typeof(Analytics), typeof(Crashes));
+
             LoadApplication(Startup.Init(ConfigureServices));
         }
 
