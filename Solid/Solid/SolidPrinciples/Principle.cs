@@ -9,6 +9,7 @@ namespace Solid.Models
         public string ShortDescription { get; set; }
         public string Description { get; set; }
         public string Recognize { get; set; }
-        public List<string> Examples { get; set; }
+        public List<string> GoodExamples { get; set; }
+        public List<string> BadExamples { get; set; }
     }
 }

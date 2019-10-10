@@ -24,6 +24,7 @@
     <Folder Include="Services\" />
     <Folder Include="Helpers\" />
     <Folder Include="SolidPrinciples\" />
+    <Folder Include="Controls\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="appsettings.json" />
