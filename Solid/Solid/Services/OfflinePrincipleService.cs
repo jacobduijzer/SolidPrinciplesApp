@@ -19,65 +19,36 @@ namespace Solid.Services
                     Name = "Single Responsibility Principle",
                     ShortDescription = "A class should have one, and only one, reason to change",
                     Description = "A class should have only one responsibility which means a class should be highly cohesive and implement strongly related logic. A class implementing feature 1 AND feature 2 AND feature 3 (and so on) violates SRP.",
-                    Recognize = "more than one contextually separated piece of code within single class • large setup in tests(TDD isvery useful when it comes to detecting SRP violation)",
-                    GoodExamples = new List<string>
-                    {
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada lacus sed justo porta convallis. Morbi eget bibendum orci, vitae tempus mi. Nullam malesuada pulvinar lobortis. Suspendisse vulputate in magna sed iaculis. Donec ut facilisis justo. Phasellus in ex congue, placerat lorem sed, viverra velit.",
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mauris augue, cursus at rhoncus euismod, mattis ut metus.",
-                        "Maecenas vitae euismod magna, ac convallis enim. Fusce in libero vitae nulla accumsan pharetra. Pellentesque iaculis commodo arcu quis fringilla.",
-                        "Pellentesque in molestie nunc. Duis a maximus velit, non sodales urna. Sed eu ligula sed nisi luctus egestas eu mollis dolor.",
-                        "{" +
-                        "" +
-                        "}"
-                    }
+                    //Recognize = "more than one contextually separated piece of code within single class • large setup in tests(TDD isvery useful when it comes to detecting SRP violation)",
+
                 },
                 new Principle
                 {
                     Id = 2,
                     Name = "Open/Closed Principle",
                     ShortDescription = "Possible to extend a class’s behavior, without modifying it",
-                    Description = "Some Description",
-                    GoodExamples = new List<string>
-                    {
-                        "example 1",
-                        "example 2"
-                    }
+                    Description = "In programming, the open/closed principle states that software entities (classes, modules, functions, etc.) should be open for extensions, but closed for modification. We should write our modules so that they can be extended, without requiring them to be modified. In other words, we want to be able to change what the modules do, without changing the source code of the modules.",
                 },
                 new Principle
                 {
                     Id = 3,
                     Name = "Liskov Substitution Principle",
                     ShortDescription = "Derived classes must be substitutable for their base classes",
-                    Description = "Some Description",
-                    GoodExamples = new List<string>
-                    {
-                        "example 1",
-                        "example 2"
-                    }
+                    Description = "Objects in a program should be replaceable with instances of their subtypes without altering the correctness of that program.",
                 },
                 new Principle
                 {
                     Id = 4,
                     Name = "Interface Segregation Principle",
                     ShortDescription = "Make fine grained interfaces that are client specific",
-                    Description = "Some Description",
-                    GoodExamples = new List<string>
-                    {
-                        "example 1",
-                        "example 2"
-                    }
+                    Description = "No client should be forced to depend on methods it does not use. Put more simply: Do not add additional functionality to an existing interface by adding new methods. Instead, create a new interface and let your class implement multiple interfaces if needed.",
                 },
                 new Principle
                 {
                     Id = 5,
                     Name = "Dependency Inversion Principle",
                     ShortDescription = "Depend on abstrations, not on concretions",
-                    Description = "Some Description",
-                    GoodExamples = new List<string>
-                    {
-                        "example 1",
-                        "example 2"
-                    }
+                    Description = "High-level modules should not depend on low-level modules. Both should depend on abstractions. Abstractions should not depend on details. Details should depend on abstractions. Dependency Inversion is the strategy of depending upon interfaces or abstract functions and classes, rather than upon concrete functions and classes.",
                 }
             };
         }
