@@ -2,12 +2,15 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:controls="clr-namespace:Solid.Controls"
+             xmlns:md="clr-namespace:Xam.Forms.Markdown;assembly=Xam.Forms.MarkdownView"
              x:Class="Solid.SolidPrinciples.PrincipleDetailView"
              Title="{Binding Name}">
     <StackLayout Margin="10">
-        <Label Text="{Binding Principle.Name}" FontSize="Title" />
-        <Label Text="{Binding Principle.Description}" FontSize="Medium" />
-
+        <md:MarkdownView Markdown="{Binding Principle.Description}" />
+        
+        <!--<md:MarkdownView></md:MarkdownView>-->
+        <!--<Label Text="{Binding Principle.Description}" FontSize="Medium" />-->
+        <!--<md:MarkdownView MarkDown="{Binding Principle.Description}" />-->
         <!--<Label Text="Samples" />
 
         <controls:AccordionView  Title="Example 1">
@@ -35,7 +38,7 @@
                 </StackLayout>
             </controls:AccordionView.AccordionContentView>
 
-            <controls:AccordionView.IndicatorView>
+            <controls:AccordionView.I ndicatorView>
                 <Label Text="&#xf078;" FontSize="Large"
                        FontFamily="{StaticResource FontAwesome}"/>
             </controls:AccordionView.IndicatorView>
