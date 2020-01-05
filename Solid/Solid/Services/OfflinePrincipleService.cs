@@ -47,7 +47,7 @@ namespace Solid.Services
                     Id = 5,
                     Name = "Dependency Inversion Principle",
                     ShortDescription = "Depend on abstrations, not on concretions",
-                    Description = "Dependency Inversion Principle\n\nHigh-level modules should not depend on low-level modules. Both should depend on abstractions. Abstractions should not depend on details. Details should depend on abstractions. Dependency Inversion is the strategy of depending upon interfaces or abstract functions and classes, rather than upon concrete functions and classes.",
+                    Description = "# Dependency Inversion Principle\n\nHigh-level modules should not depend on low-level modules. Both should depend on abstractions. Abstractions should not depend on details. Details should depend on abstractions. Dependency Inversion is the strategy of depending upon interfaces or abstract functions and classes, rather than upon concrete functions and classes.",
                 }
             };
         }
