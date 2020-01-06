@@ -4,8 +4,9 @@
              xmlns:md="clr-namespace:Xam.Forms.Markdown;assembly=Xam.Forms.MarkdownView"
              x:Class="Solid.SolidPrinciples.PrincipleDetailView"
              Title="{Binding Name}">
-    <ScrollView Margin="10">
-    
-        <md:MarkdownView Markdown="{Binding Principle.Description}" />
+    <ScrollView Margin="10">    
+        <md:MarkdownView
+            x:Name="markdownView"
+            Markdown="{Binding Principle.Description}" />
     </ScrollView>
 </ContentPage>

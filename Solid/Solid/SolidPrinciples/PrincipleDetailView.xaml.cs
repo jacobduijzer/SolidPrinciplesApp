@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using Xam.Forms.Markdown;
+using Xamarin.Forms;
 
 namespace Solid.SolidPrinciples
 {
@@ -8,6 +9,8 @@ namespace Solid.SolidPrinciples
         {
             InitializeComponent();
             BindingContext = viewModel;
+
+            markdownView.Theme = new DarkMarkdownTheme();
         }
     }
 }
