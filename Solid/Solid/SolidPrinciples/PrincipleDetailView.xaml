@@ -1,78 +1,11 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:controls="clr-namespace:Solid.Controls"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"             
              xmlns:md="clr-namespace:Xam.Forms.Markdown;assembly=Xam.Forms.MarkdownView"
              x:Class="Solid.SolidPrinciples.PrincipleDetailView"
              Title="{Binding Name}">
-    <StackLayout Margin="10">
+    <ScrollView Margin="10">
+    
         <md:MarkdownView Markdown="{Binding Principle.Description}" />
-        
-        <!--<md:MarkdownView></md:MarkdownView>-->
-        <!--<Label Text="{Binding Principle.Description}" FontSize="Medium" />-->
-        <!--<md:MarkdownView MarkDown="{Binding Principle.Description}" />-->
-        <!--<Label Text="Samples" />
-
-        <controls:AccordionView  Title="Example 1">
-
-            <controls:AccordionView.AccordionContentView>
-                <StackLayout>
-                    <Label Text="Here is a simple content"
-                           TextColor="Black"/>                    
-                </StackLayout>
-            </controls:AccordionView.AccordionContentView>
-
-            <controls:AccordionView.IndicatorView>
-                <Label Text="&#xf078;" FontSize="Large"
-                       FontFamily="{StaticResource FontAwesome}"/>
-            </controls:AccordionView.IndicatorView>
-
-        </controls:AccordionView>
-
-        <controls:AccordionView  Title="Example 2">
-
-            <controls:AccordionView.AccordionContentView>
-                <StackLayout>
-                    <Label Text="Here is a simple content"
-                           TextColor="Black"/>
-                </StackLayout>
-            </controls:AccordionView.AccordionContentView>
-
-            <controls:AccordionView.I ndicatorView>
-                <Label Text="&#xf078;" FontSize="Large"
-                       FontFamily="{StaticResource FontAwesome}"/>
-            </controls:AccordionView.IndicatorView>
-
-        </controls:AccordionView>-->
-
-        <!--<CarouselView ItemsSource="{Binding Principle.GoodExamples}">
-            <CarouselView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                        <StackLayout Padding="10">
-                            <Label Text="{Binding .}"
-                                   LineBreakMode="NoWrap"
-                                   Style="{DynamicResource ListItemTextStyle}"
-                                   FontSize="16" />
-                        </StackLayout>
-                    </ViewCell>
-                </DataTemplate>
-            </CarouselView.ItemTemplate>
-        </CarouselView>
-
-        <CarouselView ItemsSource="{Binding Principle.BadExamples}">
-            <CarouselView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                        <StackLayout Padding="10">
-                            <Label Text="{Binding .}"
-                                   LineBreakMode="NoWrap"
-                                   Style="{DynamicResource ListItemTextStyle}"
-                                   FontSize="16" />
-                        </StackLayout>
-                    </ViewCell>
-                </DataTemplate>
-            </CarouselView.ItemTemplate>
-        </CarouselView>-->
-    </StackLayout>
+    </ScrollView>
 </ContentPage>
